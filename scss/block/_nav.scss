@@ -1,0 +1,226 @@
+.subtitle {
+  background-color: #ba0000;
+}
+.subtitle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtitle__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:first-child {
+    padding: 0 10px;
+  }
+}
+.subtitle__item-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:hover svg {
+    fill: #ffcc00;
+  }
+  &:hover .subtitle__item-row-link {
+    color: #ffcc00;
+  }
+}
+
+.subtitle__item-row:hover .subtitle__item-hidden {
+  display: block;
+}
+
+.subtitle__item-row .subtitle__item-hidden a{
+  padding: 15px 0;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.subtitle__item-row .subtitle-dropdown a{
+  padding: 15px 15px;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.subtitle__item-hidden{
+  position: absolute;
+  display: none;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(186, 0, 0, 0.8);
+  z-index: 5;
+  border-radius: 0 0 6px 6px;
+
+  a {
+  border-bottom: 1px solid #ffcc00;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  a:hover {
+    background-color: #00ff55;;
+    color: #ffcc00;
+    &:nth-child(3) {
+      border-radius: 0 0 6px 6px;
+    }
+  }
+}
+
+.subtitle-dropdown {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: auto;
+  background-color: rgba(186, 0, 0, 0.8);
+  z-index: 5;
+  border-radius: 0 0 6px 6px;
+
+  .subtitle__item-row-link {
+  border-bottom: 1px solid #ffcc00;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .subtitle__item-row-link:hover {
+    background-color: #00ff55;;
+    color: #ffcc00;
+    &:nth-child(3) {
+      border-radius: 0 0 6px 6px;
+    }
+  }
+}
+
+.subtitle-wrapper .subtitle__item-row-link:nth-child(2) {
+  margin-right: 26px;
+} 
+
+.subtitle__item-row-link {
+  padding: 15px 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 5px;
+  letter-spacing: 0.5px;
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+
+.subtitle__item-dropdown {
+  padding: 15px 15px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.subtitle__item-dropdown:hover {
+  background-color: #00ff55;;
+  color: #ffcc00;
+  &:nth-child(3) {
+    border-radius: 0 0 6px 6px;
+  }
+} 
+.subtitle__item-row-svg {
+  display: flex;
+}
+.nav-title {
+  background-color: #ffcc00;
+}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 122px;
+}
+.nav-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  a {
+    &::before {
+      position: absolute;
+      content: attr(data-item);
+      transition: 0.5s;
+      color: white;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 0;
+      overflow: hidden;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        padding-top: 0;
+      }
+    }
+  }
+}
+.nav-element__item  {
+  position: relative;
+  margin-right: 45px;
+  font-size: 14px;
+  color: rgb(186, 0, 0);
+  text-transform: uppercase;
+  line-height: 1;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 700;
+  padding-bottom: 50px;
+  margin-top: 50px;
+
+  &:hover, &:active, &:focus {
+    border-bottom: 4px solid rgb(186, 0, 0);
+    // color: white;
+    transform: translateY(2px);
+  }
+  
+}
+.nav-searh {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(186, 0, 0);
+  box-shadow: 0px 10px 18px 0px rgba(186, 0, 0, 0.4);
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    box-shadow: 0px 20px 30px 0px rgba(186, 0, 0, 0.4);
+    svg {
+      fill: #ffcc00;
+    }
+  }
+}
+
+.search-input {
+  position: absolute;
+  left: -180px;
+  width: 150px;
+  height: 25px;
+  outline-color: rgb(186, 0, 0);
+  font-size: 14px;
+  color: rgb(186, 0, 0);
+  font-weight: 400;
+}

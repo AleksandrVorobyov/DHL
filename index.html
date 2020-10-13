@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHL</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="subtitle">
+        <div class="container">
+          <div class="subtitle-wrapper">
+            <div data-select class="subtitle__item">
+              <div class="subtitle__item-row">
+                <div class="subtitle__item-row-link" href="#">
+                  <div data-select-title class="subtitle__item-row-link-text">English</div>
+                  <div class="subtitle-dropdown hidden">
+                    <div data-select-item="Russian" class="subtitle__item-dropdown">Russian</div>
+                    <div data-select-item="Germany" class="subtitle__item-dropdown">Germany</div>
+                    <div data-select-item="France" class="subtitle__item-dropdown">France</div>
+                  </div>
+                </div>
+                <div class="subtitle__item-row-svg">
+                  <svg width="8" height="5" viewBox="0 0 8 5">
+                    <path
+                      data-name="arrow icon"
+                      d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                      transform="translate(-1113 -2149)"
+                    />
+                  </svg>
+                </div>
+                <select class="hidden">
+                  <option value="none" class="subtitle__item-dropdown">English</option>
+                  <option value="Russian" class="subtitle__item-dropdown">Russian</option>
+                  <option value="Germany" class="subtitle__item-dropdown">Germany</option>
+                  <option value="France" class="subtitle__item-dropdown">France</option>
+                </select>
+              </div>
+            </div>
+            <div class="subtitle__item">
+              <div class="subtitle__item-row">
+                <div class="subtitle__item-row-svg">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <path
+                      id="user_icon"
+                      data-name="user icon"
+                      d="M1533,2152c-2.67,0-8,1.34-8,4v3h16v-3C1541,2153.34,1535.67,2152,1533,2152Zm0-9a4,4,0,1,0,4,4A4,4,0,0,0,1533,2143Zm0,10.9c2.97,0,6.1,1.46,6.1,2.1v1.1h-12.2V2156C1526.9,2155.36,1530.03,2153.9,1533,2153.9Zm0-9a2.1,2.1,0,1,1-2.1,2.1A2.1,2.1,0,0,1,1533,2144.9Z"
+                      transform="translate(-1525 -2143)"
+                    />
+                  </svg>
+                </div>
+                <a class="subtitle__item-row-link" href="#">Contact Center</a>
+              </div>
+              <div class="subtitle__item-row">
+                <a class="subtitle__item-row-link" href="#">Country Profile</a>
+                <div class="subtitle__item-row-svg">
+                  <svg width="8" height="5" viewBox="0 0 8 5">
+                    <path
+                      data-name="arrow icon"
+                      d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                      transform="translate(-1113 -2149)"
+                    />
+                  </svg>
+                </div>
+                <div class="subtitle__item-hidden">
+                  <a class="subtitle__item-row-link" href="#">Russia Profile</a>
+                  <a class="subtitle__item-row-link" href="#">Germany Profile</a>
+                  <a class="subtitle__item-row-link" href="#">France Profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="nav-title">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a class="nav-logo" href="#">
+              <img src="./img/nav/dhl-logo.png" alt="DHL" />
+            </a>
+            <div class="nav-element">
+              <a href="#" class="nav-element__item" data-item="Express">
+                Express
+              </a>
+              <a href="#" class="nav-element__item" data-item="Parcel">
+                Parcel
+              </a>
+              <a href="#" class="nav-element__item" data-item="Logistics">
+                Logistics
+              </a>
+              <a href="#" class="nav-element__item" data-item="Mail"> Mail </a>
+              <a href="#" class="nav-element__item" data-item="Press">
+                Press
+              </a>
+              <a href="#" class="nav-element__item" data-item="About">
+                About
+              </a>
+            </div>
+            <div data-search class="nav-searh">
+              <svg
+                fill="#000000"
+                viewBox="0 0 24 24"
+                width="24px"
+                height="24px"
+              >
+                <path
+                  d="M 13.261719 14.867188 L 15.742188 17.347656 C 15.363281 18.070313 15.324219 18.789063 15.722656 19.1875 L 20.25 23.714844 C 20.820313 24.285156 22.0625 23.972656 23.015625 23.015625 C 23.972656 22.058594 24.285156 20.820313 23.714844 20.25 L 19.191406 15.722656 C 18.789063 15.324219 18.070313 15.363281 17.347656 15.738281 L 14.867188 13.261719 Z M 8.5 0 C 3.804688 0 0 3.804688 0 8.5 C 0 13.195313 3.804688 17 8.5 17 C 13.195313 17 17 13.195313 17 8.5 C 17 3.804688 13.195313 0 8.5 0 Z M 8.5 15 C 4.910156 15 2 12.089844 2 8.5 C 2 4.910156 4.910156 2 8.5 2 C 12.089844 2 15 4.910156 15 8.5 C 15 12.089844 12.089844 15 8.5 15 Z"
+                />
+              </svg>
+              <input data-input class="search-input hidden"></input>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-content">
+        <div class="container">
+          <div class="header-wrapper">
+            <h2 class="header-title">We Deliver With Speed</h2>
+            <div class="header-subtitle">
+              <p>When an unknown printer took a galley of type and scrambled</p>
+              <p>
+                it to make a type specimen book. It has survived not only five
+                centuries
+              </p>
+            </div>
+            <div class="header-item">
+              <span>Amazing</span>
+              <span class="yellow">.</span>
+              <span>Quick</span>
+              <span class="yellow">.</span>
+              <span>24/7 Supports</span>
+            </div>
+            <div class="button-row">
+              <button class="button">Learn More</button>
+              <button class="button button-header">dhl worldwide</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="service">
+        <div class="container">
+          <div class="service-wrapper">
+            <div class="service-title">
+              <h3 class="service-title__text">Awesome Services</h3>
+              <h4 class="service-title__item">Services</h4>
+            </div>
+            <div class="service-content">
+              <div class="service-content-card">
+                <div class="service-content-card__img">
+                  <a class="gradient-card" href="#">
+                    <img src="./img/cards/card-01.jpg" alt="img" />
+                  </a>
+                </div>
+                <div class="service-content-card__title">Express Services</div>
+                <div class="service-content-card__text">
+                  When an unknown printer took a galley of type and scrambled it
+                  to make a type specimen.
+                </div>
+                <a href="#" class="service-content-card__link">Read More</a>
+              </div>
+              <div class="service-content-card">
+                <div class="service-content-card__img">
+                  <a class="gradient-card" href="#">
+                    <img src="./img/cards/card-02.jpg" alt="img" />
+                  </a>
+                </div>
+                <div class="service-content-card__title">
+                  parcel & ecommerce
+                </div>
+                <div class="service-content-card__text">
+                  When an unknown printer took a galley of type and scrambled it
+                  to make a type specimen.
+                </div>
+                <a href="#" class="service-content-card__link">Read More</a>
+              </div>
+              <div class="service-content-card">
+                <div class="service-content-card__img">
+                  <a class="gradient-card" href="#">
+                    <img src="./img/cards/card-03.jpg" alt="img" />
+                  </a>
+                </div>
+                <div class="service-content-card__title">frieght transport</div>
+                <div class="service-content-card__text">
+                  When an unknown printer took a galley of type and scrambled it
+                  to make a type specimen.
+                </div>
+                <a href="#" class="service-content-card__link">Read More</a>
+              </div>
+              <form name="service-card" class="service-content-card">
+                <div class="card-form-title">DHl Worldwide</div>
+                <div class="card-form-text">
+                  When an unknown prot printer type and scra
+                </div>
+                <div data-select1 class="card-form-input-wrap">
+                  <div data-select-title1 class="card-form-input">Location</div>
+                  <div class="service-card__select">
+                      <svg width="8" height="5" viewBox="0 0 8 5">
+                        <path
+                          data-name="arrow icon"
+                          d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                          transform="translate(-1113 -2149)"
+                        />
+                      </svg>
+                      <div class="service-card__select-dropdown hidden">
+                        <div data-select-item1="Russia" class="service__item-dropdown">Russia</div>
+                        <div data-select-item1="England" class="service__item-dropdown">England</div>
+                        <div data-select-item1="Germany" class="service__item-dropdown">Germany</div>
+                        <div data-select-item1="France" class="service__item-dropdown">France</div>
+                      </div>
+                  </div>
+                  <select class="hidden">
+                    <option value="Russia">Russia</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                  </select>
+                </div>
+                <button class="button">explore</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features-title">
+          One of the best international service provider
+        </div>
+        <div class="container">
+          <div class="features-cards">
+            <div class="features-cards__item">
+              <div class="features-cards__item-img">
+                <img src="./img/cards/card-04.jpg" alt="" />
+              </div>
+              <div class="features-cards__item-title">Aerospace Provider</div>
+              <ul class="features-cards__item-text">
+                <li>When an unknown printer took.</li>
+                <li>Make a type specimen book.</li>
+                <li>It has survived.</li>
+                <li>Airlines unknown specimen.</li>
+              </ul>
+            </div>
+            <div class="features-cards__item">
+              <div class="features-cards__item-img">
+                <img src="./img/cards/card-05.jpg" alt="" />
+              </div>
+              <div class="features-cards__item-title">Poppins Proved</div>
+              <ul class="features-cards__item-text">
+                <li>When an unknown printer took.</li>
+                <li>Make a type specimen book.</li>
+                <li>It has survived.</li>
+                <li>Airlines unknown specimen.</li>
+              </ul>
+            </div>
+            <div class="features-cards__item">
+              <div class="features-cards__item-img">
+                <img src="./img/cards/card-06.jpg" alt="" />
+              </div>
+              <div class="features-cards__item-title">Airline Specimen</div>
+              <ul class="features-cards__item-text">
+                <li>When an unknown printer took.</li>
+                <li>Make a type specimen book.</li>
+                <li>It has survived.</li>
+                <li>Airlines unknown specimen.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form-content">
+            <form action="url" class="form-wrapper">
+              <div class="form-nav">
+                <div class="form-nav__item form-nav__item-red">express</div>
+                <div class="form-nav__item form-nav__item-yellow">
+                  logistics
+                </div>
+              </div>
+              <div class="form-input-wrapper">
+                <div class="form-input-wrap">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Track your shipment"
+                  />
+                  <button class="button-form__item" type="button">
+                      <svg width="8" height="5" viewBox="0 0 8 5">
+                        <path
+                          data-name="arrow icon"
+                          d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                          transform="translate(-1113 -2149)"
+                        />
+                      </svg>
+                  </button>
+                </div>
+                <div class="form-input-wrap">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="New login"
+                  />
+                  <button class="button-form__item" type="button">
+                      <svg width="8" height="5" viewBox="0 0 8 5">
+                        <path
+                          data-name="arrow icon"
+                          d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                          transform="translate(-1113 -2149)"
+                        />
+                      </svg>
+                  </button>
+                </div>
+                <div class="form-input-wrap">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Find Dhl point"
+                  />
+                  <button class="button-form__item" type="button">
+                      <svg width="8" height="5" viewBox="0 0 8 5">
+                        <path
+                          data-name="arrow icon"
+                          d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                          transform="translate(-1113 -2149)"
+                        />
+                      </svg>
+                  </button>
+                </div>
+                <div class="form-input-wrap form-input-wrap--active">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="find a service"
+                  />
+                  <button class="button-form__item" type="button">
+                      <svg width="8" height="5" viewBox="0 0 8 5">
+                        <path
+                          data-name="arrow icon"
+                          d="M1117,2154l4-2.5v-2.4l-4,2.52-4-2.62v2.5Z"
+                          transform="translate(-1113 -2149)"
+                        />
+                      </svg>
+                  </button>
+                </div>
+                <div class="form-input__active">
+                  <div class="form-input__active-title">
+                    International Services to Another Country
+                  </div>
+                  <div class="form-input__active-text">
+                    <p>Emergency</p>
+                    <p>Time Critical</p>
+                    <p>Less Urgent</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="form-img">
+              <div class="form-img-wrap"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo-section">
+        <div class="container">
+          <div class="promo-section-wrapper">
+            <div class="promo-section-wrapper__item">
+              <div class="promo-section-wrapper__item-title">
+                Excellence. Simply delivered.
+              </div>
+              <div class="promo-section-wrapper__item-text">
+                <span
+                  >International express deliveries; global freight forwarding
+                  by air, sea, road and rail;</span
+                >
+                <span
+                  >warehousing solutions from packaging, to repairs, to storage;
+                  mail deliveries worldwide;</span
+                >
+                <span
+                  >and other customized logistic services – with everything DHL
+                  does, we</span
+                >
+                <span>help connect people and improve their lives.</span>
+              </div>
+            </div>
+            <div class="promo-section-wrapper__item">
+              <div class="promo-section-wrapper__item-button">
+                <button type="button" class="button-promo">learn-more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-promo">
+          <div class="footer-promo__item">
+            <img src="./img/footer/themeforest.png" alt="" />
+          </div>
+          <div class="footer-promo__item">
+            <img src="./img/footer/photodune.png" alt="" />
+          </div>
+          <div class="footer-promo__item">
+            <img src="./img/footer/graphicriver.png" alt="" />
+          </div>
+          <div class="footer-promo__item">
+            <img src="./img/footer/codecanyon.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-nav-img">
+          <div class="footer-nav-img-red"></div>
+          <img src="./img/footer/bg-1.png" alt="" />
+        </div>
+        <div class="footer-nav-link">
+          <div class="footer-nav-link-row">
+            <p class="footer-nav-link-row__title">Contact Center</p>
+            <ul class="footer-nav-link__column">
+              <li>
+                <a href="#">DHL Express</a>
+              </li>
+              <li>
+                <a href="#">DHL Parcel & eCommerce</a>
+              </li>
+              <li>
+                <a href="#">DHL Global Forwarding</a>
+              </li>
+              <li>
+                <a href="#">DHL Freight</a>
+              </li>
+              <li>
+                <a href="#">DHL Supply Chain</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-link-row">
+            <p class="footer-nav-link-row__title">About Us</p>
+            <ul class="footer-nav-link__column">
+              <li>
+                <a href="#">Partnerships</a>
+              </li>
+              <li>
+                <a href="#">Company Portrait</a>
+              </li>
+              <li>
+                <a href="#">DHL Global Forwarding</a>
+              </li>
+              <li>
+                <a href="#">Green Solutions</a>
+              </li>
+              <li>
+                <a href="#">Innovation</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-link-row">
+            <p class="footer-nav-link-row__title">Social Media</p>
+            <ul class="footer-nav-link__column">
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">dribbble</a>
+              </li>
+              <li>
+                <a href="#">behance</a>
+              </li>
+              <li>
+                <a href="#">gmail</a>
+              </li>
+              <li>
+                <a href="#">twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-nav-img">
+          <img src="./img/footer/bg-2.png" alt="" />
+          <div class="footer-nav-img-yellow"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
