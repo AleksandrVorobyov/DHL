@@ -2,21 +2,42 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
+
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 15px;
 }
+
 svg {
     fill: white;
 }
+
 .yellow {
     color: #ffcc00;
 }
 
 .hidden {
     display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+@media (min-width: 1590px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 930px) {
+
 }

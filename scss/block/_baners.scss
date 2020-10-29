@@ -1,0 +1,52 @@
+.banners {
+    position: relative;
+    padding: 70px 0;
+}
+
+.banners-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.banners__item {
+  position: relative;
+  padding: 38px 18px 20px;
+  background-color: rgb(231, 233, 231);
+  border: 2px solid rgb(158, 156, 154);
+  transition: 0.4s ease-in;
+  margin-bottom: 50px;
+
+  flex: 0 0 40%;
+  margin-right: 50px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border: 2px solid rgb(216, 112, 78);
+    transform: translateY(-10px);
+  }
+
+  @media (min-width: 1200px) {
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
