@@ -4,8 +4,13 @@
 }
 .promo-section-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  
+  @media (width: 1200px) {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 .promo-section-wrapper__item {
 }
@@ -24,6 +29,11 @@
   color: rgb(255, 255, 255);
   line-height: 1.5;
   letter-spacing: 0.6px;
+  margin-bottom: 30px;
+
+  @media (width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .button-promo {
   font-size: 12px;

@@ -52,3 +52,29 @@ searchButton.forEach(function(item) {
     })
 })
 
+
+
+var burgerBtn = document.querySelector('.nav-burger');
+
+// burgerBtn.forEach(function (item) {
+//     item.addEventListener('click', function() {
+        // var burgerNav = document.querySelector(".burger")
+        // burgerNav.toggleClass('burger--active');
+//     })
+// });
+
+burgerBtn.addEventListener('click', burgerNav);
+
+function burgerNav() {
+    var burgerNav = document.querySelector(".burger")
+    burgerNav.classList.toggle('burger--active');
+}
+
+var burgerLink = document.querySelectorAll(".burger__item");
+
+burgerLink.forEach(function(removeBurger) {
+    removeBurger.addEventListener("click", function() {
+        var burgerNav = document.querySelector(".burger")
+        burgerNav.classList.remove('burger--active');
+    })
+})

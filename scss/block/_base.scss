@@ -1,43 +1,55 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
 }
 
 svg {
-    fill: white;
+  fill: white;
 }
 
 .yellow {
-    color: #ffcc00;
+  color: #ffcc00;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .relative {
-    position: relative;
+  position: relative;
 }
 
 @media (min-width: 1590px) {
-    
 }
 
 @media (min-width: 1200px) {
-    
 }
 
 @media (min-width: 930px) {
+}
 
+@media (min-width: 850px) {
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 630px) {
+}
+
+@media (min-width: 530px) {
+}
+
+@media (min-width: 430px) {
 }

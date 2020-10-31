@@ -1,6 +1,6 @@
 .banners {
     position: relative;
-    padding: 70px 0;
+    padding: 70px 0 40px;
 }
 
 .banners-wrap {
@@ -22,31 +22,15 @@
   background-color: rgb(231, 233, 231);
   border: 2px solid rgb(158, 156, 154);
   transition: 0.4s ease-in;
-  margin-bottom: 50px;
+  margin: 0 10px 30px;
+  height: 125px;
 
-  flex: 0 0 40%;
-  margin-right: 50px;
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(4) {
-    margin-bottom: 0;
-  }
-
-  &:nth-child(3) {
-    margin-bottom: 0;
+  @media (min-width: 630px) {
+    height: auto;
   }
 
   &:hover {
     border: 2px solid rgb(216, 112, 78);
     transform: translateY(-10px);
-  }
-
-  @media (min-width: 1200px) {
-    flex: none;
-    margin-right: 0;
-    margin-bottom: 0;
   }
 }
