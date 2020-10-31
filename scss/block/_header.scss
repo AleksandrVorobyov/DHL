@@ -52,7 +52,7 @@
 }
 
 .header-item {
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.5;
@@ -63,6 +63,10 @@
     &:last-child {
       padding-right: 0;
     }
+  }
+
+  @media (min-width: 530px) {
+    font-size: 20px;
   }
 }
 

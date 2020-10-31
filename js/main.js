@@ -45,7 +45,7 @@ searchButton.forEach(function(item) {
     item.addEventListener('click', function() {
         var searhInput = document.querySelector('[data-input]');
         if (searhInput !== '.hidden') {
-            this.querySelector('.search-input').classList.toggle('hidden');
+            this.querySelector('.search-input').classList.remove('hidden');
         } else {
             window.location.reload();
         }
